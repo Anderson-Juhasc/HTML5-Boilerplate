@@ -84,6 +84,9 @@ td { vertical-align: top; }
 .hide { display:none;}
 .show { display:block;}
 
+.bg(@src, @rest) {
+	background:url('@{i}@{src}') @rest;
+}
 .iBlock {
 	display:-moz-inline-stack;
 	display:inline-block;
