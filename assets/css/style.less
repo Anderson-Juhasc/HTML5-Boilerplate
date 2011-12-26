@@ -1,3 +1,8 @@
+/*
+ * Adiciona o Framework CSS (LESSElements)
+ */
+@import 'elements.less';
+
 /* HTML5 ✰ Boilerplate
  * ==|== normalize ==========================================================
  */
@@ -84,8 +89,8 @@ td { vertical-align: top; }
 .hide { display:none;}
 .show { display:block;}
 
-.bg(@src, @rest) {
-	background:url('@{i}@{src}') @rest;
+.bg(@src, @position: 'top left', @repeat: 'no-repeat', @color = 'transparent') {
+	background: @color url('@{i}@{src}') @repeat @position;
 }
 .iBlock {
 	display:-moz-inline-stack;
